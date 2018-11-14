@@ -1,0 +1,22 @@
+{
+  "name": "@foundcareers/react-native-infinite-flatlist",
+  "version": "1.0.0",
+  "description": "Infinite Scrolling FlatList with Defaults",
+  "main": "InfiniteFlatList.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foundcareers/react-native-infinite-flatlist.git"
+  },
+  "author": "Found Careers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/foundcareers/react-native-infinite-flatlist/issues"
+  },
+  "homepage": "https://github.com/foundcareers/react-native-infinite-flatlist#readme",
+  "dependencies": {
+    "prop-types": "^15.6.2"
+  }
+}
