@@ -13,13 +13,13 @@ const ListFooter = ({loading, containerStyle, size}) => {
 };
 
 ListFooter.propTypes = {
-  loading: false,
+  loading: PropTypes.bool,
   size: PropTypes.oneOf(['small', 'large']),
   containerStyle: PropTypes.object
 };
 
 ListFooter.defaultProps = {
-  text: 'Empty',
+  loading: false,
   size: 'large',
   containerStyle: {
     paddingVertical: 20,
