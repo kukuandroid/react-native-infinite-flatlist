@@ -1,14 +1,30 @@
 import React from 'react';
 import {ActivityIndicator, Text, View} from 'react-native';
+import PropTypes from 'prop-types';
 
-const ListFooter = ({loading}) => {
+const ListFooter = ({loading, containerStyle, size}) => {
   if (!loading) return null;
 
   return (
-    <View style={{paddingVertical: 20, borderColor: '#CCC'}}>
-      <ActivityIndicator animating size="large" />
+    <View style={containerStyle}>
+      <ActivityIndicator animating size={size} />
     </View>
   );
+};
+
+ListFooter.propTypes = {
+  loading: false,
+  size: PropTypes.oneOf(['small', 'large']),
+  containerStyle: PropTypes.object
+};
+
+ListFooter.defaultProps = {
+  text: 'Empty',
+  size: 'large',
+  containerStyle: {
+    paddingVertical: 20,
+    borderColor: '#CCC'
+  }
 };
 
 export default ListFooter;

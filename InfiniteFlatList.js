@@ -48,49 +48,53 @@ class InfiniteFlatList extends Component {
 
 InfiniteFlatList.propTypes = {
   /**
-   * The items to display
+   * The items to display - default: []
    */
   data: PropTypes.array,
   /**
-   * Loading flag (initial load and paging)
+   * Loading flag (initial load and paging) - default: false
    */
   loading: PropTypes.bool,
   /**
-   * Refreshing flag (pull-to-refresh)
+   * Refreshing flag (pull-to-refresh) - default: false
    */
   refreshing: PropTypes.bool,
   /**
-   * Text to display when no items
+   * Text to display when no items - default: 'No data'
    */
   emptyText: PropTypes.string,
   /**
-   * The render item function
+   * The render item function - default: noop
    */
   renderItem: PropTypes.func,
   /**
-   * The fetch action to dispatch paging requests.
+   * The fetch action to dispatch paging requests - default: noop
    */
   onEndReached: PropTypes.func,
   /**
-   * The fetch action to dispatch initial load and pull to refresh.
+   * The fetch action to dispatch initial load and pull to refresh - default: noop
    */
   onRefresh: PropTypes.func,
   /**
-   * The resource key extractor
+   * The resource key extractor - default: object id
    */
   keyExtractor: PropTypes.func,
   /**
-   * removeClippedSubviews
+   * removeClippedSubviews - default: false
    */
   removeClippedSubviews: PropTypes.bool
 };
 
 InfiniteFlatList.defaultProps = {
+  data: [],
   loading: false,
   refreshing: false,
   emptyText: 'No data',
-  removeClippedSubviews: false,
-  keyExtractor: resource => resource.id
+  renderItem: () => {},
+  onEndReached: () => {},
+  onRefresh: () => {},
+  keyExtractor: resource => resource.id,
+  removeClippedSubviews: false
 };
 
 export default InfiniteFlatList;
