@@ -18,5 +18,8 @@
   "homepage": "https://github.com/foundcareers/react-native-infinite-flatlist#readme",
   "dependencies": {
     "prop-types": "^15.6.2"
+  },
+  "devDependencies": {
+    "ghooks": "^2.0.4"
   }
 }
