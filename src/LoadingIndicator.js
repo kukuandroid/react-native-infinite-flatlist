@@ -1,6 +1,6 @@
 import React from 'react';
-import {ActivityIndicator, View} from 'react-native';
 import PropTypes from 'prop-types';
+import { ActivityIndicator, View } from 'react-native';
 
 const LoadingIndicator = ({containerStyle, size}) => (
   <View style={containerStyle}>

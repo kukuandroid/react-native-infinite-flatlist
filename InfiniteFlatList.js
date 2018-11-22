@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-import React, {Component} from 'react';
-import {FlatList, View} from 'react-native';
+import React from 'react';
+import { FlatList, View } from 'react-native';
 
 import ListEmpty from './src/ListEmpty';
 import ListFooter from './src/ListFooter';
 import LoadingIndicator from './src/LoadingIndicator';
 
-class InfiniteFlatList extends Component {
+class InfiniteFlatList extends React.Component {
   componentDidMount() {
     this.props.onRefresh();
   };
@@ -72,6 +72,10 @@ InfiniteFlatList.propTypes = {
    */
   onEndReached: PropTypes.func,
   /**
+   * How far from the end of the list before triggering the onEndReached function
+   * */
+  onEndReachedThreshold: PropTypes.number,
+  /**
    * The fetch action to dispatch initial load and pull to refresh - default: noop
    */
   onRefresh: PropTypes.func,
@@ -92,6 +96,7 @@ InfiniteFlatList.defaultProps = {
   emptyText: 'No data',
   renderItem: () => {},
   onEndReached: () => {},
+  onEndReachedThreshold: 0.75,
   onRefresh: () => {},
   keyExtractor: resource => resource.id,
   removeClippedSubviews: false

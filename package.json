@@ -4,12 +4,19 @@
   "description": "Infinite Scrolling FlatList with Defaults",
   "main": "InfiniteFlatList.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/foundcareers/react-native-infinite-flatlist.git"
   },
+  "keywords": [
+    "flatlist",
+    "infinite",
+    "pagination",
+    "react-native",
+    "scroll-view"
+  ],
   "author": "Found Careers",
   "license": "ISC",
   "bugs": {
@@ -20,6 +27,9 @@
     "prop-types": "^15.6.2"
   },
   "devDependencies": {
-    "ghooks": "^2.0.4"
+    "eslint": "^5.9.0",
+    "eslint-config-universe": "^1.0.7",
+    "ghooks": "^2.0.4",
+    "prettier": "^1.15.2"
   }
 }
