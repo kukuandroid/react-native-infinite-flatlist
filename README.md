@@ -3,12 +3,12 @@
 InfiniteFlatList is a React Native flat list that provides some defaults for the header and footer of the list and callbacks
 for fetching and refreshing the list.
 
-[![npm package](https://nodei.co/npm/react-native-infinite-flatview.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-native-infinite-flatview/)
+[![npm package](https://nodei.co/npm/@foundcareers/react-native-infinite-flatview.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/@foundcareers/react-native-infinite-flatlist/)
 
 ## Installation
 
 ```sh
-npm install --save react-native-infinite-flatlist
+npm install --save @foundcareers/react-native-infinite-flatlist
 ```
 
 ## Usage
