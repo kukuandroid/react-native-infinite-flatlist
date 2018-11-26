@@ -28,8 +28,8 @@ class Items extends React.Component {
               renderItem={this._renderItem}
               loading={loading}
               refreshing={refreshing}
-              onRefresh={() => refreshFirstPage(fetch)}
-              onEndReached={() => fetchNextPage(fetch, nextPage)}
+              onRefresh={this._refreshPage}
+              onEndReached={this._fetchNextPage}
               emptyText="No Items"
             />
         );

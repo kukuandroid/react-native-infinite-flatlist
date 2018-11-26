@@ -4,7 +4,8 @@
   "description": "Infinite Scrolling FlatList with Defaults",
   "main": "InfiniteFlatList.js",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -27,9 +28,22 @@
     "prop-types": "^15.6.2"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
     "eslint": "^5.9.0",
     "eslint-config-universe": "^1.0.7",
     "ghooks": "^2.0.4",
-    "prettier": "^1.15.2"
+    "jest": "^23.6.0",
+    "jest-react-native": "^18.0.0",
+    "prettier": "^1.15.2",
+    "react": "^16.6.3",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.6.3",
+    "react-native": "^0.55.4",
+    "react-test-renderer": "^16.6.3"
+  },
+  "jest": {
+    "verbose": true,
+    "preset": "react-native"
   }
 }
