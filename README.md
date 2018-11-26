@@ -16,11 +16,11 @@
   </a>
 </p>
 <p align="center">
-  <a href="https://www.npmjs.com/package/foundcareers/react-native-infinite-flatlist">
-    <img alt="npm latest version" src="https://img.shields.io/npm/v/semantic-release/latest.svg">
+  <a href="https://www.npmjs.com/package/@foundcareers/react-native-infinite-flatlist">
+    <img alt="npm latest version" src="https://img.shields.io/npm/v/@foundcareers/react-native-infinite-flatlist/latest.svg">
   </a>
-  <a href="https://www.npmjs.com/package/foundcareers/react-native-infinite-flatlist">
-    <img alt="npm next version" src="https://img.shields.io/npm/v/semantic-release/next.svg">
+  <a href="https://www.npmjs.com/package/@foundcareers/react-native-infinite-flatlist">
+    <img alt="npm next version" src="https://img.shields.io/npm/v/@foundcareers/react-native-infinite-flatlist/next.svg">
   </a>
 </p>
 
