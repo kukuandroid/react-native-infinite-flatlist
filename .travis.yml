@@ -1,0 +1,35 @@
+env:
+  global:
+    - CC_TEST_REPORTER_ID=acd283166904858f10649999e964dcd4740547554cb32519e78d4630f579ec1b
+    - GIT_COMMITTED_AT=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then git log -1 --pretty=format:%ct; else git log -1 --skip 1 --pretty=format:%ct; fi)
+
+language: node_js
+dist: trusty
+
+cache:
+  directories:
+    - ~/.npm
+    - node_modules
+
+notifications:
+  email: false
+
+node_js:
+  - '8'
+
+before_script:
+  - npm i
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
+script:
+  - npm run test:coverage
+
+after_success:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+  - npm run travis-deploy-once "npm run semantic-release"
+
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
