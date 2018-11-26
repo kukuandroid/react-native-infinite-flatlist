@@ -1,6 +1,6 @@
 {
   "name": "@foundcareers/react-native-infinite-flatlist",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Infinite Scrolling FlatList with Defaults",
   "main": "InfiniteFlatList.js",
   "scripts": {
