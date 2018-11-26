@@ -1,11 +1,12 @@
 {
   "name": "@foundcareers/react-native-infinite-flatlist",
-  "version": "0.0.0-development",
+  "version": "1.0.2",
   "description": "Infinite Scrolling FlatList with Defaults",
   "main": "InfiniteFlatList.js",
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once --pro"
   },
@@ -32,6 +33,7 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-jest": "^23.6.0",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.9.0",
     "eslint-config-universe": "^1.0.7",
     "ghooks": "^2.0.4",
@@ -49,5 +51,10 @@
   "jest": {
     "verbose": true,
     "preset": "react-native"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

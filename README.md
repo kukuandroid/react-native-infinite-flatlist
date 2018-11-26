@@ -1,9 +1,29 @@
 # InfiniteFlatList
 
-InfiniteFlatList is a React Native flat list that provides some defaults for the header and footer of the list and callbacks
-for fetching and refreshing the list.
+<h1 align="center" style="border-bottom: none;">react-native-infinite-flatlist</h1>
 
-[![npm package](https://nodei.co/npm/@foundcareers/react-native-infinite-flatview.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/@foundcareers/react-native-infinite-flatlist/)
+<h3 align="center">InfiniteFlatList is a React Native flat list that provides defaults for the header and footer of the list and callbacks
+                   for fetching and refreshing the list.</h3>
+<p align="center">
+  <a href="https://travis-ci.com/foundcareers/react-native-infinite-flatlist">
+    <img alt="Travis" src="https://img.shields.io/travis/semantic-release/semantic-release/caribou.svg">
+  </a>
+  <a href="#badge">
+    <img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
+  </a>
+  <a href="http://commitizen.github.io/cz-cli/">
+    <img alt="Commitizen" src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg">
+  </a>
+</p>
+<p align="center">
+  <a href="https://www.npmjs.com/package/semantic-release">
+    <img alt="npm latest version" src="https://img.shields.io/npm/v/semantic-release/latest.svg">
+  </a>
+  <a href="https://www.npmjs.com/package/semantic-release">
+    <img alt="npm next version" src="https://img.shields.io/npm/v/semantic-release/next.svg">
+  </a>
+</p>
+
 
 ## Installation
 
