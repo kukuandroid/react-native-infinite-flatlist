@@ -1,10 +1,10 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import { FlatList, View } from 'react-native';
+import PropTypes from "prop-types";
+import React from "react";
+import { FlatList } from "react-native";
 
-import ListEmpty from './src/ListEmpty';
-import ListFooter from './src/ListFooter';
-import LoadingIndicator from './src/LoadingIndicator';
+import ListEmpty from "./src/ListEmpty";
+import ListFooter from "./src/ListFooter";
+import LoadingIndicator from "./src/LoadingIndicator";
 
 class InfiniteFlatList extends React.Component {
   componentDidMount() {
