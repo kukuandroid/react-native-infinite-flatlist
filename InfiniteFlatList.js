@@ -18,6 +18,7 @@ class InfiniteFlatList extends React.Component {
       refreshing,
       onRefresh,
       onEndReached,
+      onEndReachedThreshold,
       emptyText,
       renderItem,
       keyExtractor,
@@ -37,7 +38,7 @@ class InfiniteFlatList extends React.Component {
                 refreshing={refreshing}
                 onRefresh={onRefresh}
                 onEndReached={onEndReached}
-                onEndReachedThreshold={0.75}
+                onEndReachedThreshold={onEndReachedThreshold}
                 removeClippedSubviews={removeClippedSubviews}
                 ListEmptyComponent={<ListEmpty text={emptyListText} />}
                 ListFooterComponent={<ListFooter loading={loading} />}
