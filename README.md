@@ -39,7 +39,13 @@ import InfiniteFlatList from 'react-native-infinite-flatlist';
 
 
 class Items extends React.Component {
+
+    componentDidMount() {
+      this._fetchFirstPage();
+    }
+
     ...
+
     render() {
         ...
         return (
