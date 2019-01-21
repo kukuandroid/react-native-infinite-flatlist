@@ -7,10 +7,6 @@ import ListFooter from "./src/ListFooter";
 import LoadingIndicator from "./src/LoadingIndicator";
 
 class InfiniteFlatList extends React.Component {
-  componentDidMount() {
-    this.props.onRefresh();
-  };
-
   render() {
     const {
       data,
@@ -41,8 +37,8 @@ class InfiniteFlatList extends React.Component {
                 removeClippedSubviews={removeClippedSubviews}
                 ListEmptyComponent={<ListEmpty text={emptyListText} />}
                 ListFooterComponent={<ListFooter loading={loading} />}
-    />
-  );
+      />
+    );
   }
 }
 
