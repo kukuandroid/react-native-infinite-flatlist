@@ -80,3 +80,6 @@ class Items extends React.Component {
 
 ## Caveats
 The initial data size must be large enough to reach the bottom of the screen, otherwise scroll events won't trigger.
+
+## Pagination
+sample : https://github.com/expressjs/express-paginate
